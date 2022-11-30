@@ -2,3 +2,5 @@
 /install/
 /log/
 /src/
+*linaro*/
+.idea/

@@ -43,8 +43,8 @@ WORKDIR /ws/ros2build
 RUN colcon mixin add cc file:///ws/cc-mixin-index.yaml
 RUN colcon mixin update cc
 
-ENV TARGET_ARCH=aarch64
-ENV CROSS_COMPILE=/ws/ros2build/gcc-linaro-aarch64/bin/aarch64-linux-gnu-
-ENV SYSROOT=/ws/ros2build/sysroot-linaro6.5
+ENV TARGET_ARCH=armhf
+ENV CROSS_COMPILE=/ws/ros2build/gcc-linaro-armhf/bin/arm-linux-gnueabihf-
+ENV SYSROOT=/ws/ros2build/sysroot-linaro7.5
 ENV ROS2_INSTALL_PATH=/ws/ros2build/install
-ENV PYTHON_SOABI=cpython-36m-aarch64-linux-gnu
+ENV PYTHON_SOABI=cpython-36m-armhf-linux-gnu
